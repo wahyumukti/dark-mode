@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS Base-->
+
+    <link rel="stylesheet" href="{% static 'pentol/styles/base.css' %}">
+    <link rel="stylesheet" href="base.css">
+    <!--link boxicon.com-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Dark-mode</title>
+  </head>
+  <body>
+    <nav class="sidebar close">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="{% static 'pentol/images/logo.png' %}" alt="logo">
+          </span>
+
+          <div class="text header-text">
+            <span class="name">CodingLap</span>
+            <span class="profession"> Web Developer</span>
+          </div>
+        </div>
+        <!--ini adalah js toggle-->
+        <i class='bx bxs-chevron-right toggle'></i>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <li class="search-box">
+              <i class='bx bx-search-alt-2 icon'></i>
+              <input type="search" name="input" placeholder="Search..">
+          </li>
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="#">
+                <i class='bx bxs-home-alt-2 icon' ></i>
+                <span class=" text nav-text">Home</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class='bx bxl-python icon'></i>
+                <span class=" text nav-text">Python</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class='bx bxl-html5 icon'></i>
+                <span class=" text nav-text">HTML</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class='bx bxl-javascript icon'></i>
+                <span class=" text nav-text">Javascript</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class='bx bxl-css3 icon' ></i>
+                <span class=" text nav-text">CSS</span>
+              </a>
+            </li>
+            <li class="nav-link">
+          </ul>
+        </div>
+        <div class="bottom-content">
+
+          <li class="">
+            <a href="#">
+              <i class='bx bxs-user icon' ></i>
+              <span class=" text nav-text">Profile</span>
+            </a>
+          </li>
+
+          <li class="mode">
+            <div class="moon-sun">
+              <i class='bx bxs-moon icon moon' ></i>
+              <i class='bx bxs-sun icon sun' ></i>
+            </div>
+            <span class="mode-text text">Darck Mode</span>
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+
+      </div>
+    </nav>
+
+    <section class=" home">
+      <div class="text">Halaman Utama</div>
+    </section>
+    <script src='japa.js'></script>
+    
+
+  </body>
+</html>
